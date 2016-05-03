@@ -19488,6 +19488,2172 @@ process.umask = function() { return 0; };
 
 },{}],168:[function(require,module,exports){
 var React = require('react');
+var MainMenu = React.createClass({
+    displayName: "MainMenu",
+
+    render: function () {
+        return React.createElement(
+            "div",
+            null,
+            React.createElement(
+                "div",
+                { className: "navbar-default sidebar", role: "navigation" },
+                React.createElement(
+                    "div",
+                    { className: "sidebar-nav navbar-collapse" },
+                    React.createElement(
+                        "ul",
+                        { className: "nav", id: "side-menu" },
+                        React.createElement(
+                            "li",
+                            { className: "sidebar-search" },
+                            React.createElement(
+                                "div",
+                                { className: "input-group custom-search-form" },
+                                React.createElement("input", { type: "text", className: "form-control", placeholder: "Search..." }),
+                                React.createElement(
+                                    "span",
+                                    { className: "input-group-btn" },
+                                    React.createElement(
+                                        "button",
+                                        { className: "btn btn-default", type: "button" },
+                                        React.createElement("i", { className: "fa fa-search" })
+                                    )
+                                )
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "index.html" },
+                                React.createElement("i", { className: "fa fa-dashboard fa-fw" }),
+                                " Dashboard"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "#" },
+                                React.createElement("i", { className: "fa fa-bar-chart-o fa-fw" }),
+                                " Charts",
+                                React.createElement("span", { className: "fa arrow" })
+                            ),
+                            React.createElement(
+                                "ul",
+                                { className: "nav nav-second-level" },
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "flot.html" },
+                                        "Flot Charts"
+                                    )
+                                ),
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "morris.html" },
+                                        "Morris.js Charts"
+                                    )
+                                )
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "tables.html" },
+                                React.createElement("i", { className: "fa fa-table fa-fw" }),
+                                " Tables"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "forms.html" },
+                                React.createElement("i", { className: "fa fa-edit fa-fw" }),
+                                " Forms"
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "#" },
+                                React.createElement("i", { className: "fa fa-wrench fa-fw" }),
+                                " UI Elements",
+                                React.createElement("span", { className: "fa arrow" })
+                            ),
+                            React.createElement(
+                                "ul",
+                                { className: "nav nav-second-level" },
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "panels-wells.html" },
+                                        "Panels and Wells"
+                                    )
+                                ),
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "buttons.html" },
+                                        "Buttons"
+                                    )
+                                ),
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "notifications.html" },
+                                        "Notifications"
+                                    )
+                                ),
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "typography.html" },
+                                        "Typography"
+                                    )
+                                ),
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "icons.html" },
+                                        " Icons"
+                                    )
+                                ),
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "grid.html" },
+                                        "Grid"
+                                    )
+                                )
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "#" },
+                                React.createElement("i", { className: "fa fa-sitemap fa-fw" }),
+                                " Multi-Level Dropdown",
+                                React.createElement("span", { className: "fa arrow" })
+                            ),
+                            React.createElement(
+                                "ul",
+                                { className: "nav nav-second-level" },
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "#" },
+                                        "Second Level Item"
+                                    )
+                                ),
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "#" },
+                                        "Second Level Item"
+                                    )
+                                ),
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "#" },
+                                        "Third Level ",
+                                        React.createElement("span", { className: "fa arrow" })
+                                    ),
+                                    React.createElement(
+                                        "ul",
+                                        { className: "nav nav-third-level" },
+                                        React.createElement(
+                                            "li",
+                                            null,
+                                            React.createElement(
+                                                "a",
+                                                { href: "#" },
+                                                "Third Level Item"
+                                            )
+                                        ),
+                                        React.createElement(
+                                            "li",
+                                            null,
+                                            React.createElement(
+                                                "a",
+                                                { href: "#" },
+                                                "Third Level Item"
+                                            )
+                                        ),
+                                        React.createElement(
+                                            "li",
+                                            null,
+                                            React.createElement(
+                                                "a",
+                                                { href: "#" },
+                                                "Third Level Item"
+                                            )
+                                        ),
+                                        React.createElement(
+                                            "li",
+                                            null,
+                                            React.createElement(
+                                                "a",
+                                                { href: "#" },
+                                                "Third Level Item"
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        React.createElement(
+                            "li",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "#" },
+                                React.createElement("i", { className: "fa fa-files-o fa-fw" }),
+                                " Sample Pages",
+                                React.createElement("span", { className: "fa arrow" })
+                            ),
+                            React.createElement(
+                                "ul",
+                                { className: "nav nav-second-level" },
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "blank.html" },
+                                        "Blank Page"
+                                    )
+                                ),
+                                React.createElement(
+                                    "li",
+                                    null,
+                                    React.createElement(
+                                        "a",
+                                        { href: "login.html" },
+                                        "Login Page"
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        );
+    }
+});
+
+module.exports = MainMenu;
+
+},{"react":166}],169:[function(require,module,exports){
+var React = require('react');
+var MainMenu = require('./MainMenu.jsx');
+
+var MainPage = React.createClass({
+    displayName: 'MainPage',
+
+    render: function () {
+        return React.createElement(
+            'div',
+            null,
+            React.createElement(
+                'nav',
+                { className: 'navbar navbar-default navbar-static-top', role: 'navigation', style: { marginBottom: 0 } },
+                React.createElement(
+                    'div',
+                    { className: 'navbar-header' },
+                    React.createElement(
+                        'button',
+                        { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '.navbar-collapse' },
+                        React.createElement(
+                            'span',
+                            { className: 'sr-only' },
+                            'Toggle navigation'
+                        ),
+                        React.createElement('span', { className: 'icon-bar' }),
+                        React.createElement('span', { className: 'icon-bar' }),
+                        React.createElement('span', { className: 'icon-bar' })
+                    ),
+                    React.createElement(
+                        'a',
+                        { className: 'navbar-brand', href: 'index.html' },
+                        'SB Admin v2.0'
+                    )
+                ),
+                React.createElement(
+                    'ul',
+                    { className: 'nav navbar-top-links navbar-right' },
+                    React.createElement(
+                        'li',
+                        { className: 'dropdown' },
+                        React.createElement(
+                            'a',
+                            { className: 'dropdown-toggle', 'data-toggle': 'dropdown', href: '#' },
+                            React.createElement('i', { className: 'fa fa-envelope fa-fw' }),
+                            '  ',
+                            React.createElement('i', { className: 'fa fa-caret-down' })
+                        ),
+                        React.createElement(
+                            'ul',
+                            { className: 'dropdown-menu dropdown-messages' },
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement(
+                                            'strong',
+                                            null,
+                                            'John Smith'
+                                        ),
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                'Yesterday'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...'
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement(
+                                            'strong',
+                                            null,
+                                            'John Smith'
+                                        ),
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                'Yesterday'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...'
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement(
+                                            'strong',
+                                            null,
+                                            'John Smith'
+                                        ),
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                'Yesterday'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...'
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { className: 'text-center', href: '#' },
+                                    React.createElement(
+                                        'strong',
+                                        null,
+                                        'Read All Messages'
+                                    ),
+                                    React.createElement('i', { className: 'fa fa-angle-right' })
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        'li',
+                        { className: 'dropdown' },
+                        React.createElement(
+                            'a',
+                            { className: 'dropdown-toggle', 'data-toggle': 'dropdown', href: '#' },
+                            React.createElement('i', { className: 'fa fa-tasks fa-fw' }),
+                            '  ',
+                            React.createElement('i', { className: 'fa fa-caret-down' })
+                        ),
+                        React.createElement(
+                            'ul',
+                            { className: 'dropdown-menu dropdown-tasks' },
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement(
+                                            'p',
+                                            null,
+                                            React.createElement(
+                                                'strong',
+                                                null,
+                                                'Task 1'
+                                            ),
+                                            React.createElement(
+                                                'span',
+                                                { className: 'pull-right text-muted' },
+                                                '40% Complete'
+                                            )
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'progress progress-striped active' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'progress-bar progress-bar-success', role: 'progressbar', 'aria-valuenow': '40', 'aria-valuemin': '0', 'aria-valuemax': '100', style: { width: 40 + '%' } },
+                                                React.createElement(
+                                                    'span',
+                                                    { className: 'sr-only' },
+                                                    '40% Complete (success)'
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement(
+                                            'p',
+                                            null,
+                                            React.createElement(
+                                                'strong',
+                                                null,
+                                                'Task 2'
+                                            ),
+                                            React.createElement(
+                                                'span',
+                                                { className: 'pull-right text-muted' },
+                                                '20% Complete'
+                                            )
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'progress progress-striped active' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'progress-bar progress-bar-info', role: 'progressbar', 'aria-valuenow': '20', 'aria-valuemin': '0', 'aria-valuemax': '100', style: { width: 20 + '%' } },
+                                                React.createElement(
+                                                    'span',
+                                                    { className: 'sr-only' },
+                                                    '20% Complete'
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement(
+                                            'p',
+                                            null,
+                                            React.createElement(
+                                                'strong',
+                                                null,
+                                                'Task 3'
+                                            ),
+                                            React.createElement(
+                                                'span',
+                                                { className: 'pull-right text-muted' },
+                                                '60% Complete'
+                                            )
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'progress progress-striped active' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'progress-bar progress-bar-warning', role: 'progressbar', 'aria-valuenow': '60', 'aria-valuemin': '0', 'aria-valuemax': '100', style: { width: 60 + '%' } },
+                                                React.createElement(
+                                                    'span',
+                                                    { className: 'sr-only' },
+                                                    '60% Complete (warning)'
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement(
+                                            'p',
+                                            null,
+                                            React.createElement(
+                                                'strong',
+                                                null,
+                                                'Task 4'
+                                            ),
+                                            React.createElement(
+                                                'span',
+                                                { className: 'pull-right text-muted' },
+                                                '80% Complete'
+                                            )
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'progress progress-striped active' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'progress-bar progress-bar-danger', role: 'progressbar', 'aria-valuenow': '80', 'aria-valuemin': '0', 'aria-valuemax': '100', style: { width: 80 + '%' } },
+                                                React.createElement(
+                                                    'span',
+                                                    { className: 'sr-only' },
+                                                    '80% Complete (danger)'
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { className: 'text-center', href: '#' },
+                                    React.createElement(
+                                        'strong',
+                                        null,
+                                        'See All Tasks'
+                                    ),
+                                    React.createElement('i', { className: 'fa fa-angle-right' })
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        'li',
+                        { className: 'dropdown' },
+                        React.createElement(
+                            'a',
+                            { className: 'dropdown-toggle', 'data-toggle': 'dropdown', href: '#' },
+                            React.createElement('i', { className: 'fa fa-bell fa-fw' }),
+                            '  ',
+                            React.createElement('i', { className: 'fa fa-caret-down' })
+                        ),
+                        React.createElement(
+                            'ul',
+                            { className: 'dropdown-menu dropdown-alerts' },
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement('i', { className: 'fa fa-comment fa-fw' }),
+                                        ' New Comment',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            '4 minutes ago'
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement('i', { className: 'fa fa-twitter fa-fw' }),
+                                        ' 3 New Followers',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            '12 minutes ago'
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement('i', { className: 'fa fa-envelope fa-fw' }),
+                                        ' Message Sent',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            '4 minutes ago'
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement('i', { className: 'fa fa-tasks fa-fw' }),
+                                        ' New Task',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            '4 minutes ago'
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement(
+                                        'div',
+                                        null,
+                                        React.createElement('i', { className: 'fa fa-upload fa-fw' }),
+                                        ' Server Rebooted',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            '4 minutes ago'
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { className: 'text-center', href: '#' },
+                                    React.createElement(
+                                        'strong',
+                                        null,
+                                        'See All Alerts'
+                                    ),
+                                    React.createElement('i', { className: 'fa fa-angle-right' })
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        'li',
+                        { className: 'dropdown' },
+                        React.createElement(
+                            'a',
+                            { className: 'dropdown-toggle', 'data-toggle': 'dropdown', href: '#' },
+                            React.createElement('i', { className: 'fa fa-user fa-fw' }),
+                            '  ',
+                            React.createElement('i', { className: 'fa fa-caret-down' })
+                        ),
+                        React.createElement(
+                            'ul',
+                            { className: 'dropdown-menu dropdown-user' },
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement('i', { className: 'fa fa-user fa-fw' }),
+                                    ' User Profile'
+                                )
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    React.createElement('i', { className: 'fa fa-gear fa-fw' }),
+                                    ' Settings'
+                                )
+                            ),
+                            React.createElement('li', { className: 'divider' }),
+                            React.createElement(
+                                'li',
+                                null,
+                                React.createElement(
+                                    'a',
+                                    { href: 'login.html' },
+                                    React.createElement('i', { className: 'fa fa-sign-out fa-fw' }),
+                                    ' Logout'
+                                )
+                            )
+                        )
+                    )
+                ),
+                React.createElement(MainMenu, null)
+            ),
+            React.createElement(
+                'div',
+                { id: 'page-wrapper' },
+                React.createElement(
+                    'div',
+                    { className: 'row' },
+                    React.createElement(
+                        'div',
+                        { className: 'col-lg-12' },
+                        React.createElement(
+                            'h1',
+                            { className: 'page-header' },
+                            'Dashboard'
+                        )
+                    )
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'row' },
+                    React.createElement(
+                        'div',
+                        { className: 'col-lg-3 col-md-6' },
+                        React.createElement(
+                            'div',
+                            { className: 'panel panel-primary' },
+                            React.createElement(
+                                'div',
+                                { className: 'panel-heading' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    React.createElement(
+                                        'div',
+                                        { className: 'col-xs-3' },
+                                        React.createElement('i', { className: 'fa fa-comments fa-5x' })
+                                    ),
+                                    React.createElement(
+                                        'div',
+                                        { className: 'col-xs-9 text-right' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'huge' },
+                                            '26'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            null,
+                                            'New Comments!'
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'a',
+                                { href: '#' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'panel-footer' },
+                                    React.createElement(
+                                        'span',
+                                        { className: 'pull-left' },
+                                        'View Details'
+                                    ),
+                                    React.createElement(
+                                        'span',
+                                        { className: 'pull-right' },
+                                        React.createElement('i', { className: 'fa fa-arrow-circle-right' })
+                                    ),
+                                    React.createElement('div', { className: 'clearfix' })
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'col-lg-3 col-md-6' },
+                        React.createElement(
+                            'div',
+                            { className: 'panel panel-green' },
+                            React.createElement(
+                                'div',
+                                { className: 'panel-heading' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    React.createElement(
+                                        'div',
+                                        { className: 'col-xs-3' },
+                                        React.createElement('i', { className: 'fa fa-tasks fa-5x' })
+                                    ),
+                                    React.createElement(
+                                        'div',
+                                        { className: 'col-xs-9 text-right' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'huge' },
+                                            '12'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            null,
+                                            'New Tasks!'
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'a',
+                                { href: '#' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'panel-footer' },
+                                    React.createElement(
+                                        'span',
+                                        { className: 'pull-left' },
+                                        'View Details'
+                                    ),
+                                    React.createElement(
+                                        'span',
+                                        { className: 'pull-right' },
+                                        React.createElement('i', { className: 'fa fa-arrow-circle-right' })
+                                    ),
+                                    React.createElement('div', { className: 'clearfix' })
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'col-lg-3 col-md-6' },
+                        React.createElement(
+                            'div',
+                            { className: 'panel panel-yellow' },
+                            React.createElement(
+                                'div',
+                                { className: 'panel-heading' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    React.createElement(
+                                        'div',
+                                        { className: 'col-xs-3' },
+                                        React.createElement('i', { className: 'fa fa-shopping-cart fa-5x' })
+                                    ),
+                                    React.createElement(
+                                        'div',
+                                        { className: 'col-xs-9 text-right' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'huge' },
+                                            '124'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            null,
+                                            'New Orders!'
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'a',
+                                { href: '#' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'panel-footer' },
+                                    React.createElement(
+                                        'span',
+                                        { className: 'pull-left' },
+                                        'View Details'
+                                    ),
+                                    React.createElement(
+                                        'span',
+                                        { className: 'pull-right' },
+                                        React.createElement('i', { className: 'fa fa-arrow-circle-right' })
+                                    ),
+                                    React.createElement('div', { className: 'clearfix' })
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'col-lg-3 col-md-6' },
+                        React.createElement(
+                            'div',
+                            { className: 'panel panel-red' },
+                            React.createElement(
+                                'div',
+                                { className: 'panel-heading' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    React.createElement(
+                                        'div',
+                                        { className: 'col-xs-3' },
+                                        React.createElement('i', { className: 'fa fa-support fa-5x' })
+                                    ),
+                                    React.createElement(
+                                        'div',
+                                        { className: 'col-xs-9 text-right' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'huge' },
+                                            '13'
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            null,
+                                            'Support Tickets!'
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'a',
+                                { href: '#' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'panel-footer' },
+                                    React.createElement(
+                                        'span',
+                                        { className: 'pull-left' },
+                                        'View Details'
+                                    ),
+                                    React.createElement(
+                                        'span',
+                                        { className: 'pull-right' },
+                                        React.createElement('i', { className: 'fa fa-arrow-circle-right' })
+                                    ),
+                                    React.createElement('div', { className: 'clearfix' })
+                                )
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'row' },
+                    React.createElement(
+                        'div',
+                        { className: 'col-lg-8' },
+                        React.createElement(
+                            'div',
+                            { className: 'panel panel-default' },
+                            React.createElement(
+                                'div',
+                                { className: 'panel-heading' },
+                                React.createElement('i', { className: 'fa fa-bar-chart-o fa-fw' }),
+                                ' Area Chart Example',
+                                React.createElement(
+                                    'div',
+                                    { className: 'pull-right' },
+                                    React.createElement(
+                                        'div',
+                                        { className: 'btn-group' },
+                                        React.createElement(
+                                            'button',
+                                            { type: 'button', className: 'btn btn-default btn-xs dropdown-toggle', 'data-toggle': 'dropdown' },
+                                            'Actions',
+                                            React.createElement('span', { className: 'caret' })
+                                        ),
+                                        React.createElement(
+                                            'ul',
+                                            { className: 'dropdown-menu pull-right', role: 'menu' },
+                                            React.createElement(
+                                                'li',
+                                                null,
+                                                React.createElement(
+                                                    'a',
+                                                    { href: '#' },
+                                                    'Action'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'li',
+                                                null,
+                                                React.createElement(
+                                                    'a',
+                                                    { href: '#' },
+                                                    'Another action'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'li',
+                                                null,
+                                                React.createElement(
+                                                    'a',
+                                                    { href: '#' },
+                                                    'Something else here'
+                                                )
+                                            ),
+                                            React.createElement('li', { className: 'divider' }),
+                                            React.createElement(
+                                                'li',
+                                                null,
+                                                React.createElement(
+                                                    'a',
+                                                    { href: '#' },
+                                                    'Separated link'
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'panel-body' },
+                                React.createElement('div', { id: 'morris-area-chart' })
+                            )
+                        ),
+                        React.createElement(
+                            'div',
+                            { className: 'panel panel-default' },
+                            React.createElement(
+                                'div',
+                                { className: 'panel-heading' },
+                                React.createElement('i', { className: 'fa fa-bar-chart-o fa-fw' }),
+                                ' Bar Chart Example',
+                                React.createElement(
+                                    'div',
+                                    { className: 'pull-right' },
+                                    React.createElement(
+                                        'div',
+                                        { className: 'btn-group' },
+                                        React.createElement(
+                                            'button',
+                                            { type: 'button', className: 'btn btn-default btn-xs dropdown-toggle', 'data-toggle': 'dropdown' },
+                                            'Actions',
+                                            React.createElement('span', { className: 'caret' })
+                                        ),
+                                        React.createElement(
+                                            'ul',
+                                            { className: 'dropdown-menu pull-right', role: 'menu' },
+                                            React.createElement(
+                                                'li',
+                                                null,
+                                                React.createElement(
+                                                    'a',
+                                                    { href: '#' },
+                                                    'Action'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'li',
+                                                null,
+                                                React.createElement(
+                                                    'a',
+                                                    { href: '#' },
+                                                    'Another action'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'li',
+                                                null,
+                                                React.createElement(
+                                                    'a',
+                                                    { href: '#' },
+                                                    'Something else here'
+                                                )
+                                            ),
+                                            React.createElement('li', { className: 'divider' }),
+                                            React.createElement(
+                                                'li',
+                                                null,
+                                                React.createElement(
+                                                    'a',
+                                                    { href: '#' },
+                                                    'Separated link'
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'panel-body' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    React.createElement(
+                                        'div',
+                                        { className: 'col-lg-4' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'table-responsive' },
+                                            React.createElement(
+                                                'table',
+                                                { className: 'table table-bordered table-hover table-striped' },
+                                                React.createElement(
+                                                    'thead',
+                                                    null,
+                                                    React.createElement(
+                                                        'tr',
+                                                        null,
+                                                        React.createElement(
+                                                            'th',
+                                                            null,
+                                                            '#'
+                                                        ),
+                                                        React.createElement(
+                                                            'th',
+                                                            null,
+                                                            'Date'
+                                                        ),
+                                                        React.createElement(
+                                                            'th',
+                                                            null,
+                                                            'Time'
+                                                        ),
+                                                        React.createElement(
+                                                            'th',
+                                                            null,
+                                                            'Amount'
+                                                        )
+                                                    )
+                                                ),
+                                                React.createElement(
+                                                    'tbody',
+                                                    null,
+                                                    React.createElement(
+                                                        'tr',
+                                                        null,
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3326'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '10/21/2013'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3:29 PM'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '$321.33'
+                                                        )
+                                                    ),
+                                                    React.createElement(
+                                                        'tr',
+                                                        null,
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3325'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '10/21/2013'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3:20 PM'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '$234.34'
+                                                        )
+                                                    ),
+                                                    React.createElement(
+                                                        'tr',
+                                                        null,
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3324'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '10/21/2013'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3:03 PM'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '$724.17'
+                                                        )
+                                                    ),
+                                                    React.createElement(
+                                                        'tr',
+                                                        null,
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3323'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '10/21/2013'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3:00 PM'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '$23.71'
+                                                        )
+                                                    ),
+                                                    React.createElement(
+                                                        'tr',
+                                                        null,
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3322'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '10/21/2013'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '2:49 PM'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '$8345.23'
+                                                        )
+                                                    ),
+                                                    React.createElement(
+                                                        'tr',
+                                                        null,
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3321'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '10/21/2013'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '2:23 PM'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '$245.12'
+                                                        )
+                                                    ),
+                                                    React.createElement(
+                                                        'tr',
+                                                        null,
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3320'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '10/21/2013'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '2:15 PM'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '$5663.54'
+                                                        )
+                                                    ),
+                                                    React.createElement(
+                                                        'tr',
+                                                        null,
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '3319'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '10/21/2013'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '2:13 PM'
+                                                        ),
+                                                        React.createElement(
+                                                            'td',
+                                                            null,
+                                                            '$943.45'
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'div',
+                                        { className: 'col-lg-8' },
+                                        React.createElement('div', { id: 'morris-bar-chart' })
+                                    )
+                                )
+                            )
+                        ),
+                        React.createElement(
+                            'div',
+                            { className: 'panel panel-default' },
+                            React.createElement(
+                                'div',
+                                { className: 'panel-heading' },
+                                React.createElement('i', { className: 'fa fa-clock-o fa-fw' }),
+                                ' Responsive Timeline'
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'panel-body' },
+                                React.createElement(
+                                    'ul',
+                                    { className: 'timeline' },
+                                    React.createElement(
+                                        'li',
+                                        null,
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-badge' },
+                                            React.createElement('i', { className: 'fa fa-check' })
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-panel' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-heading' },
+                                                React.createElement(
+                                                    'h4',
+                                                    { className: 'timeline-title' },
+                                                    'Lorem ipsum dolor'
+                                                ),
+                                                React.createElement(
+                                                    'p',
+                                                    null,
+                                                    React.createElement(
+                                                        'small',
+                                                        { className: 'text-muted' },
+                                                        React.createElement('i', { className: 'fa fa-clock-o' }),
+                                                        ' 11 hours ago via Twitter'
+                                                    )
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-body' },
+                                                React.createElement(
+                                                    'p',
+                                                    null,
+                                                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'li',
+                                        { className: 'timeline-inverted' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-badge warning' },
+                                            React.createElement('i', { className: 'fa fa-credit-card' })
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-panel' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-heading' },
+                                                React.createElement(
+                                                    'h4',
+                                                    { className: 'timeline-title' },
+                                                    'Lorem ipsum dolor'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-body' },
+                                                React.createElement(
+                                                    'p',
+                                                    null,
+                                                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.'
+                                                ),
+                                                React.createElement(
+                                                    'p',
+                                                    null,
+                                                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'li',
+                                        null,
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-badge danger' },
+                                            React.createElement('i', { className: 'fa fa-bomb' })
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-panel' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-heading' },
+                                                React.createElement(
+                                                    'h4',
+                                                    { className: 'timeline-title' },
+                                                    'Lorem ipsum dolor'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-body' },
+                                                React.createElement(
+                                                    'p',
+                                                    null,
+                                                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'li',
+                                        { className: 'timeline-inverted' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-panel' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-heading' },
+                                                React.createElement(
+                                                    'h4',
+                                                    { className: 'timeline-title' },
+                                                    'Lorem ipsum dolor'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-body' },
+                                                React.createElement(
+                                                    'p',
+                                                    null,
+                                                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'li',
+                                        null,
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-badge info' },
+                                            React.createElement('i', { className: 'fa fa-save' })
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-panel' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-heading' },
+                                                React.createElement(
+                                                    'h4',
+                                                    { className: 'timeline-title' },
+                                                    'Lorem ipsum dolor'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-body' },
+                                                React.createElement(
+                                                    'p',
+                                                    null,
+                                                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.'
+                                                ),
+                                                React.createElement('hr', null),
+                                                React.createElement(
+                                                    'div',
+                                                    { className: 'btn-group' },
+                                                    React.createElement(
+                                                        'button',
+                                                        { type: 'button', className: 'btn btn-primary btn-sm dropdown-toggle', 'data-toggle': 'dropdown' },
+                                                        React.createElement('i', { className: 'fa fa-gear' }),
+                                                        '  ',
+                                                        React.createElement('span', { className: 'caret' })
+                                                    ),
+                                                    React.createElement(
+                                                        'ul',
+                                                        { className: 'dropdown-menu', role: 'menu' },
+                                                        React.createElement(
+                                                            'li',
+                                                            null,
+                                                            React.createElement(
+                                                                'a',
+                                                                { href: '#' },
+                                                                'Action'
+                                                            )
+                                                        ),
+                                                        React.createElement(
+                                                            'li',
+                                                            null,
+                                                            React.createElement(
+                                                                'a',
+                                                                { href: '#' },
+                                                                'Another action'
+                                                            )
+                                                        ),
+                                                        React.createElement(
+                                                            'li',
+                                                            null,
+                                                            React.createElement(
+                                                                'a',
+                                                                { href: '#' },
+                                                                'Something else here'
+                                                            )
+                                                        ),
+                                                        React.createElement('li', { className: 'divider' }),
+                                                        React.createElement(
+                                                            'li',
+                                                            null,
+                                                            React.createElement(
+                                                                'a',
+                                                                { href: '#' },
+                                                                'Separated link'
+                                                            )
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'li',
+                                        null,
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-panel' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-heading' },
+                                                React.createElement(
+                                                    'h4',
+                                                    { className: 'timeline-title' },
+                                                    'Lorem ipsum dolor'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-body' },
+                                                React.createElement(
+                                                    'p',
+                                                    null,
+                                                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia quam qui adipisci quas consequuntur nostrum sequi. Consequuntur, commodi.'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'li',
+                                        { className: 'timeline-inverted' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-badge success' },
+                                            React.createElement('i', { className: 'fa fa-graduation-cap' })
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'timeline-panel' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-heading' },
+                                                React.createElement(
+                                                    'h4',
+                                                    { className: 'timeline-title' },
+                                                    'Lorem ipsum dolor'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'div',
+                                                { className: 'timeline-body' },
+                                                React.createElement(
+                                                    'p',
+                                                    null,
+                                                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque eaque.'
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'col-lg-4' },
+                        React.createElement(
+                            'div',
+                            { className: 'panel panel-default' },
+                            React.createElement(
+                                'div',
+                                { className: 'panel-heading' },
+                                React.createElement('i', { className: 'fa fa-bell fa-fw' }),
+                                ' Notifications Panel'
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'panel-body' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'list-group' },
+                                    React.createElement(
+                                        'a',
+                                        { href: '#', className: 'list-group-item' },
+                                        React.createElement('i', { className: 'fa fa-comment fa-fw' }),
+                                        ' New Comment',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                '4 minutes ago'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'a',
+                                        { href: '#', className: 'list-group-item' },
+                                        React.createElement('i', { className: 'fa fa-twitter fa-fw' }),
+                                        ' 3 New Followers',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                '12 minutes ago'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'a',
+                                        { href: '#', className: 'list-group-item' },
+                                        React.createElement('i', { className: 'fa fa-envelope fa-fw' }),
+                                        ' Message Sent',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                '27 minutes ago'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'a',
+                                        { href: '#', className: 'list-group-item' },
+                                        React.createElement('i', { className: 'fa fa-tasks fa-fw' }),
+                                        ' New Task',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                '43 minutes ago'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'a',
+                                        { href: '#', className: 'list-group-item' },
+                                        React.createElement('i', { className: 'fa fa-upload fa-fw' }),
+                                        ' Server Rebooted',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                '11:32 AM'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'a',
+                                        { href: '#', className: 'list-group-item' },
+                                        React.createElement('i', { className: 'fa fa-bolt fa-fw' }),
+                                        ' Server Crashed!',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                '11:13 AM'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'a',
+                                        { href: '#', className: 'list-group-item' },
+                                        React.createElement('i', { className: 'fa fa-warning fa-fw' }),
+                                        ' Server Not Responding',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                '10:57 AM'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'a',
+                                        { href: '#', className: 'list-group-item' },
+                                        React.createElement('i', { className: 'fa fa-shopping-cart fa-fw' }),
+                                        ' New Order Placed',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                '9:49 AM'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'a',
+                                        { href: '#', className: 'list-group-item' },
+                                        React.createElement('i', { className: 'fa fa-money fa-fw' }),
+                                        ' Payment Received',
+                                        React.createElement(
+                                            'span',
+                                            { className: 'pull-right text-muted small' },
+                                            React.createElement(
+                                                'em',
+                                                null,
+                                                'Yesterday'
+                                            )
+                                        )
+                                    )
+                                ),
+                                React.createElement(
+                                    'a',
+                                    { href: '#', className: 'btn btn-default btn-block' },
+                                    'View All Alerts'
+                                )
+                            )
+                        ),
+                        React.createElement(
+                            'div',
+                            { className: 'panel panel-default' },
+                            React.createElement(
+                                'div',
+                                { className: 'panel-heading' },
+                                React.createElement('i', { className: 'fa fa-bar-chart-o fa-fw' }),
+                                ' Donut Chart Example'
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'panel-body' },
+                                React.createElement('div', { id: 'morris-donut-chart' }),
+                                React.createElement(
+                                    'a',
+                                    { href: '#', className: 'btn btn-default btn-block' },
+                                    'View Details'
+                                )
+                            )
+                        ),
+                        React.createElement(
+                            'div',
+                            { className: 'chat-panel panel panel-default' },
+                            React.createElement(
+                                'div',
+                                { className: 'panel-heading' },
+                                React.createElement('i', { className: 'fa fa-comments fa-fw' }),
+                                'Chat',
+                                React.createElement(
+                                    'div',
+                                    { className: 'btn-group pull-right' },
+                                    React.createElement(
+                                        'button',
+                                        { type: 'button', className: 'btn btn-default btn-xs dropdown-toggle', 'data-toggle': 'dropdown' },
+                                        React.createElement('i', { className: 'fa fa-chevron-down' })
+                                    ),
+                                    React.createElement(
+                                        'ul',
+                                        { className: 'dropdown-menu slidedown' },
+                                        React.createElement(
+                                            'li',
+                                            null,
+                                            React.createElement(
+                                                'a',
+                                                { href: '#' },
+                                                React.createElement('i', { className: 'fa fa-refresh fa-fw' }),
+                                                ' Refresh'
+                                            )
+                                        ),
+                                        React.createElement(
+                                            'li',
+                                            null,
+                                            React.createElement(
+                                                'a',
+                                                { href: '#' },
+                                                React.createElement('i', { className: 'fa fa-check-circle fa-fw' }),
+                                                ' Available'
+                                            )
+                                        ),
+                                        React.createElement(
+                                            'li',
+                                            null,
+                                            React.createElement(
+                                                'a',
+                                                { href: '#' },
+                                                React.createElement('i', { className: 'fa fa-times fa-fw' }),
+                                                ' Busy'
+                                            )
+                                        ),
+                                        React.createElement(
+                                            'li',
+                                            null,
+                                            React.createElement(
+                                                'a',
+                                                { href: '#' },
+                                                React.createElement('i', { className: 'fa fa-clock-o fa-fw' }),
+                                                ' Away'
+                                            )
+                                        ),
+                                        React.createElement('li', { className: 'divider' }),
+                                        React.createElement(
+                                            'li',
+                                            null,
+                                            React.createElement(
+                                                'a',
+                                                { href: '#' },
+                                                React.createElement('i', { className: 'fa fa-sign-out fa-fw' }),
+                                                ' Sign Out'
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'panel-body' },
+                                React.createElement(
+                                    'ul',
+                                    { className: 'chat' },
+                                    React.createElement(
+                                        'li',
+                                        { className: 'left clearfix' },
+                                        React.createElement(
+                                            'span',
+                                            { className: 'chat-img pull-left' },
+                                            React.createElement('img', { src: 'http://placehold.it/50/55C1E7/fff', alt: 'User Avatar', className: 'img-circle' })
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'chat-body clearfix' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'header' },
+                                                React.createElement(
+                                                    'strong',
+                                                    { className: 'primary-font' },
+                                                    'Jack Sparrow'
+                                                ),
+                                                React.createElement(
+                                                    'small',
+                                                    { className: 'pull-right text-muted' },
+                                                    React.createElement('i', { className: 'fa fa-clock-o fa-fw' }),
+                                                    ' 12 mins ago'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'p',
+                                                null,
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'li',
+                                        { className: 'right clearfix' },
+                                        React.createElement(
+                                            'span',
+                                            { className: 'chat-img pull-right' },
+                                            React.createElement('img', { src: 'http://placehold.it/50/FA6F57/fff', alt: 'User Avatar', className: 'img-circle' })
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'chat-body clearfix' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'header' },
+                                                React.createElement(
+                                                    'small',
+                                                    { className: ' text-muted' },
+                                                    React.createElement('i', { className: 'fa fa-clock-o fa-fw' }),
+                                                    ' 13 mins ago'
+                                                ),
+                                                React.createElement(
+                                                    'strong',
+                                                    { className: 'pull-right primary-font' },
+                                                    'Bhaumik Patel'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'p',
+                                                null,
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'li',
+                                        { className: 'left clearfix' },
+                                        React.createElement(
+                                            'span',
+                                            { className: 'chat-img pull-left' },
+                                            React.createElement('img', { src: 'http://placehold.it/50/55C1E7/fff', alt: 'User Avatar', className: 'img-circle' })
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'chat-body clearfix' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'header' },
+                                                React.createElement(
+                                                    'strong',
+                                                    { className: 'primary-font' },
+                                                    'Jack Sparrow'
+                                                ),
+                                                React.createElement(
+                                                    'small',
+                                                    { className: 'pull-right text-muted' },
+                                                    React.createElement('i', { className: 'fa fa-clock-o fa-fw' }),
+                                                    ' 14 mins ago'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'p',
+                                                null,
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.'
+                                            )
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'li',
+                                        { className: 'right clearfix' },
+                                        React.createElement(
+                                            'span',
+                                            { className: 'chat-img pull-right' },
+                                            React.createElement('img', { src: 'http://placehold.it/50/FA6F57/fff', alt: 'User Avatar', className: 'img-circle' })
+                                        ),
+                                        React.createElement(
+                                            'div',
+                                            { className: 'chat-body clearfix' },
+                                            React.createElement(
+                                                'div',
+                                                { className: 'header' },
+                                                React.createElement(
+                                                    'small',
+                                                    { className: ' text-muted' },
+                                                    React.createElement('i', { className: 'fa fa-clock-o fa-fw' }),
+                                                    ' 15 mins ago'
+                                                ),
+                                                React.createElement(
+                                                    'strong',
+                                                    { className: 'pull-right primary-font' },
+                                                    'Bhaumik Patel'
+                                                )
+                                            ),
+                                            React.createElement(
+                                                'p',
+                                                null,
+                                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.'
+                                            )
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                'div',
+                                { className: 'panel-footer' },
+                                React.createElement(
+                                    'div',
+                                    { className: 'input-group' },
+                                    React.createElement('input', { id: 'btn-input', type: 'text', className: 'form-control input-sm', placeholder: 'Type your message here...' }),
+                                    React.createElement(
+                                        'span',
+                                        { className: 'input-group-btn' },
+                                        React.createElement(
+                                            'button',
+                                            { className: 'btn btn-warning btn-sm', id: 'btn-chat' },
+                                            'Send'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            ),
+            '*/}'
+        );
+    }
+});
+
+module.exports = MainPage;
+
+},{"./MainMenu.jsx":168,"react":166}],170:[function(require,module,exports){
+var React = require('react');
 var ListItem = require('./ListItem.jsx');
 
 var ingredients = [{ "id": 1, "text": "ham" }, { "id": 2, "text": "cheese" }, { "id": 3, "text": "potato" }];
@@ -19510,7 +21676,7 @@ var List = React.createClass({
 
 module.exports = List;
 
-},{"./ListItem.jsx":169,"react":166}],169:[function(require,module,exports){
+},{"./ListItem.jsx":171,"react":166}],171:[function(require,module,exports){
 var React = require('react');
 
 var ListItem = React.createClass({
@@ -19531,11 +21697,12 @@ var ListItem = React.createClass({
 
 module.exports = ListItem;
 
-},{"react":166}],170:[function(require,module,exports){
+},{"react":166}],172:[function(require,module,exports){
 var React = require('react');
 var ReactDom = require('react-dom');
 var List = require('./components/List.jsx');
+var MainPage = require('./MainPage.jsx');
 
-ReactDom.render(React.createElement(List, null), document.getElementById('ingredients'));
+ReactDom.render(React.createElement(MainPage, null), document.getElementById('ingredients'));
 
-},{"./components/List.jsx":168,"react":166,"react-dom":1}]},{},[170]);
+},{"./MainPage.jsx":169,"./components/List.jsx":170,"react":166,"react-dom":1}]},{},[172]);
